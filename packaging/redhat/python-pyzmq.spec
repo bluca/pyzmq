@@ -46,13 +46,7 @@ Source:         https://files.pythonhosted.org/packages/source/p/pyzmq/pyzmq-%{v
 # PATCH-FIX-OPENSUSE skip_test_tracker.patch
 #Patch1:         skip_test_tracker.patch
 BuildRequires:  fdupes
-BuildRequires:  python-rpm-macros
-BuildRequires:  %{python_module devel}
-BuildRequires:  %{python_module setuptools}
-BuildRequires:  %{python_module Cython}
-BuildRequires:  %{python_module cffi}
-BuildRequires:  %{python_module py}
-BuildRequires:  zeromq-devel
+BuildRequires:  python-rpm-macros, %{python_module devel}, %{python_module setuptools}, %{python_module Cython}, %{python_module cffi}, %{python_module py}, zeromq-devel
 Requires:       python
 %if 0%{?centos_version} == 0 && 0%{?rhel_version} == 0
 Recommends:     python-cffi
